@@ -14,13 +14,13 @@ function getMoveName(argMoveId){
 
 function displayResult(argComputerMove, argPlayerMove){
   if ((argComputerMove == 'kamień' && argPlayerMove == 'papier') || 
-  (argComputerMove == 'nożyce' && argPlayerMove == 'kamień') || 
-  (argComputerMove == 'papier' && argPlayerMove == 'nożyce')){
-  printMessage('Ty wygrywasz!');
+    (argComputerMove == 'nożyce' && argPlayerMove == 'kamień') || 
+    (argComputerMove == 'papier' && argPlayerMove == 'nożyce')){
+    printMessage('Ty wygrywasz!');
   } else if (argComputerMove == argPlayerMove){
-  printMessage('Remis!');
+    printMessage('Remis!');
   } else {
-  printMessage('Tym razem przegrywasz!');
+    printMessage('Tym razem przegrywasz!');
   } 
 }
 
