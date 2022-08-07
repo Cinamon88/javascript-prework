@@ -2,17 +2,33 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Kamień, papier, nożyce</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inconsolata">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div class="container">
-		<div id="buttons"></div>
-			<button id="play-rock">Kamień</button>
-			<button id="play-paper">Papier</button>
-			<button id="play-scissors">Nożyce</button>
-		<div id="messages"></div>
-	</div>
+	<header class="splash">
+		<div class="splash-inner">
+			<h4>welcome in the game!</h4>
+		</div>
+		<div class="container">
+			<div class="row">
+				<p>Wybierz swój ruch:</p>
+			</div>
+			<div class="row">
+				<button class="btn btn-one" id="play-rock" type="button">Kamień</button>
+				<button class="btn btn-one" id="play-paper" type="button">Papier</button>
+				<button class="btn btn-one" id="play-scissors" type="button">Nożyce</button>
+			</div>
+			<div class="row">
+				<p> Zobacz wynik:</p>
+				<div id="messages">
+				</div>
+			</div>
+		</div>
+	</header>
 	<script src="js/functions.js"></script>
 	<script src="js/script.js"></script>
 </body>
