@@ -1,4 +1,6 @@
-function playGame(playerInput){
+{
+  
+function playGame(playerInput){ 
   clearMessages();
 function getMoveName(argMoveId){
   if (argMoveId == 1){
@@ -32,8 +34,6 @@ let argComputerMove = getMoveName(randomNumber);
 
 printMessage('Mój ruch to: ' + argComputerMove);
 
-/* let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.'); */
-
 console.log('Gracz wpisał: ' + playerInput);
 
 let argPlayerMove = getMoveName(playerInput)
@@ -53,3 +53,4 @@ document.getElementById('play-scissors').addEventListener('click', function(){
   playGame(3);
 });
 
+}
