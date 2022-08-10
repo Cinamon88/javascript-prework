@@ -12,7 +12,7 @@ $font-header: 'Signika', Serif;
 }
 
 body {
-    margin: 0;
+    margin: 0 auto;
     font-size: 16px;
     line-height: 1.7;
 }
@@ -55,6 +55,15 @@ body {
     background-position: 0 100%;
     color: white;
     font-style: italic;
+    border-color: #fdcb6e;
+}
+
+p {
+    font-family: $font-text;
+    color: white;
+    font-weight: 600;
+    margin-top: 0;
+    padding-top: 50px;
 }
 
 /* Splash */
@@ -67,3 +76,9 @@ body {
     background-attachment: fixed;
 }
 
+.result {
+    color: #dfe6e9;
+    font-family: $font-text;
+    font-weight: 600; 
+    font-size: 16px;
+}
