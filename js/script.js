@@ -1,8 +1,8 @@
 {
 
-  const playGame = function (playerInput) {
+  const playGame = function(playerInput) {
     clearMessages();
-    const getMoveName = function (argMoveId) {
+    const getMoveName = function(argMoveId) {
       if (argMoveId == 1) {
         return 'kamień';
       } else if (argMoveId == 2) {
@@ -14,7 +14,7 @@
       return 'nieznany ruch';
     };
 
-    const displayResult = function (argComputerMove, argPlayerMove) {
+    const displayResult = function(argComputerMove, argPlayerMove) {
       if ((argComputerMove == 'kamień' && argPlayerMove == 'papier') ||
         (argComputerMove == 'nożyce' && argPlayerMove == 'kamień') ||
         (argComputerMove == 'papier' && argPlayerMove == 'nożyce')) {
@@ -27,8 +27,8 @@
     };
 
     const randomNumber = Math.floor(Math.random() * 3 + 1),
-      argComputerMove = getMoveName(randomNumber),
-      argPlayerMove = getMoveName(playerInput);
+      ComputerMove = getMoveName(randomNumber),
+      PlayerMove = getMoveName(playerInput);
 
     console.log('Wylosowana liczba to: ' + randomNumber);
 
@@ -41,13 +41,13 @@
     displayResult(argComputerMove, argPlayerMove);
   }
 
-  document.getElementById('play-rock').addEventListener('click', function () {
+  document.getElementById('play-rock').addEventListener('click', function() {
     playGame(1);
   });
-  document.getElementById('play-paper').addEventListener('click', function () {
+  document.getElementById('play-paper').addEventListener('click', function() {
     playGame(2);
   });
-  document.getElementById('play-scissors').addEventListener('click', function () {
+  document.getElementById('play-scissors').addEventListener('click', function() {
     playGame(3);
   });
 
