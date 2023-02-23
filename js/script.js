@@ -32,13 +32,13 @@
 
     console.log('Wylosowana liczba to: ' + randomNumber);
 
-    printMessage('Mój ruch to: ' + argComputerMove);
+    printMessage('Mój ruch to: ' + ComputerMove);
 
     console.log('Gracz wpisał: ' + playerInput);
 
-    printMessage('Twój ruch to: ' + argPlayerMove);
+    printMessage('Twój ruch to: ' + PlayerMove);
 
-    displayResult(argComputerMove, argPlayerMove);
+    displayResult(ComputerMove, PlayerMove);
   }
 
   document.getElementById('play-rock').addEventListener('click', function() {
